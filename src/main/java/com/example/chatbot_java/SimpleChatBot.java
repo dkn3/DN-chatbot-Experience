@@ -54,7 +54,7 @@ public class SimpleChatBot extends Application {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create("https://api.openai.com/v1/engines/davinci-002/completions"))
                 .header("Content-Type", "application/json")
-                .header("Authorization", "Bearer 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")
+                .header("Authorization", "Bearer --api key--")
                 .POST(HttpRequest.BodyPublishers.ofString(jsonString))
                 .build();
 
